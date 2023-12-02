@@ -1,0 +1,69 @@
+*{
+    font-family: 'Gentium Plus', serif;
+    font-family: 'Roboto', sans-serif;
+}
+.nav-center{
+  margin-right: 50px;
+  margin-left: 50px;
+  align-items: center;
+}
+.nav-link{
+    position: relative;
+}
+.nav-link:hover::after{
+    opacity: 1;
+}
+
+.nav-link::after{
+    content: '';
+    opacity: 0;
+    width: 100%;
+    height: 3px;
+    background: #2b2a2a;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    transition: 0.2s;
+}
+.order-md-1 {
+    order: 1;
+  }
+.order-md-2{
+    order: 2;
+}
+.order-md-3{
+    order: 3;
+}
+.hover-text{
+    font-size: 25px;
+}
+.hover-span{
+    font-size: 15px;
+}
+@media only screen and (max-width: 991px) {
+    .order-md-1 {
+        order: 2;
+      }
+    .order-md-2{
+        order: 1;
+    }
+    .order-md-3{
+        order: 3;
+    }
+    .col-sm-4{
+        margin-bottom: 50px;
+    }
+    .nav-center{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .hover-text{
+        font-size: 15px;
+    }
+    .hover-span{
+        font-size: 10px;
+    }
+    #img-car{
+        height: 450px !important;
+    }
+}
